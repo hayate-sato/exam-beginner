@@ -8,7 +8,7 @@ public class UserForm {
 	private String name;
 
 	@NotBlank(message = "年齢を入力してください")
-	private Integer age;
+	private String age;
 
 	@Size(min = 1, max = 300, message = "1文字以上300字以内で入力してください")
 	private String comment;
@@ -21,11 +21,11 @@ public class UserForm {
 		this.name = name;
 	}
 
-	public Integer getAge() {
+	public String getAge() {
 		return age;
 	}
 
-	public void setAge(Integer age) {
+	public void setAge(String age) {
 		this.age = age;
 	}
 
