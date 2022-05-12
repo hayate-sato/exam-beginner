@@ -1,6 +1,11 @@
 package com.example.demo.domain;
 
 public class User {
+	@Override
+	public String toString() {
+		return "User [name=" + name + ", age=" + age + ", comment=" + comment + "]";
+	}
+
 	private String name;
 	private Integer age;
 	private String comment;
