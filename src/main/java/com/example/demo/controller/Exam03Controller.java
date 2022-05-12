@@ -33,8 +33,8 @@ public class Exam03Controller {
 		application.setAttribute("num1", num1);
 		application.setAttribute("num2", num2);
 		application.setAttribute("num3", num3);
-		application.setAttribute("answer", answer);
-		application.setAttribute("answer2", answer2);
+		application.setAttribute("answer", String.format("%,d", answer));
+		application.setAttribute("answer2", String.format("%,d", answer2));
 
 		return "redirect:/exam03/toresult";
 	}
